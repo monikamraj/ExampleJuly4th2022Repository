@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>TestNG:  Test cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 21 15:15:42 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>306 seconds (306935 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.modifyCustomer()'><b>modifyCustomer</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.modifyProject()'><b>modifyProject</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.login()'><b>login</b><br>Test class: com.sgtesting.testng.ModifyProject<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.login()'><b>login</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.deleteTask()'><b>deleteTask</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.login()'><b>login</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.login()'><b>login</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.login()'><b>login</b><br>Test class: com.sgtesting.testng.CreateDeleteTask<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.createTask()'><b>createTask</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyCustomer.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.ModifyCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyCustomer@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testng.CreateCustomer</td>
+<td></td>
+<td>19</td>
+<td>com.sgtesting.testng.CreateCustomer@20ccf40b</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyProject.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.testng.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyProject@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.modifyUser()'><b>modifyUser</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateUserDeletw.login()'><b>login</b><br>Test class: com.sgtesting.testng.CreateUserDeletw</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateUserDeletw@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateDeleteTask.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testng.CreateDeleteTask</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.testng.CreateDeleteTask@21e360a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.login()'><b>login</b><br>Test class: com.sgtesting.testng.CreateProject<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.minimizeflyOutWindow()'><b>minimizeflyOutWindow</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+<tr>
+<td title='com.sgtesting.testng.ModifyUser.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testng.ModifyUser</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testng.ModifyUser@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.CreateProject.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testng.CreateProject</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.testng.CreateProject@5ba3f27a</td></tr>
+</table><p>
+</body>
+</html>
