@@ -12,8 +12,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		
 		features="src/test/resources/FeatureFiles",
-		glue={"com.sgtesting.ActiTime.stepdefinitions"}
-			
+		glue={"com.sgtesting.ActiTime.stepdefinitions"},
+			tags= {"@Execute"}
 			)
 public class DriversScript {
 private TestNGCucumberRunner testngCucumberRunner=null;
